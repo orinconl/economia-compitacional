@@ -1,0 +1,65 @@
+# --- macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# --- R / RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.Rapp.history
+*.Rproj
+
+# renv (si lo usas)
+renv/library/
+renv/staging/
+renv/cache/
+.Rprofile
+
+# --- Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# --- LaTeX (presentaciones/notas)
+*.aux
+*.log
+*.out
+*.toc
+*.nav
+*.snm
+*.synctex.gz
+
+# --- Datos y salidas (mantener carpetas con .gitkeep)
+data/*
+!data/.gitkeep
+!data/README.md
+
+outputs/
+figures/
+reports/
+
+# Archivos comprimidos / binarios
+*.zip
+*.tar
+*.tar.gz
+*.gz
+*.rar
+
+# Logs
+*.log
