@@ -5,14 +5,16 @@ Incluye materiales en **R** y **Python**, datos de práctica y guías para ejecu
 tanto **localmente** como **en la nube** (Binder/JupyterLab).
 ## Estructura del repositorio
 
+```text
 .
 ├─ R/                 # Scripts en R para el análisis principal
 ├─ python/            # Notebooks y scripts en Python (analítica y soporte)
-├─ data/              # Archivos de datos que usarán los estudiantes (sin subir sensibles)
-├─ docs/              # Material de apoyo (apuntes, PDFs, diapositivas)
-├─ .binder/           # Configuración para ejecutar en la nube (Binder/JupyterLab)
-├─ README.md          # Esta guía de uso
-└─ LICENSE            # Licencia del repositorio
+├─ data/              # Archivos de datos (no sensibles)
+├─ docs/              # Material de apoyo
+├─ .binder/           # Configuración para ejecutar en la nube
+├─ README.md          # Guía de uso
+└─ LICENSE            # Licencia
+
 
 - **R/**: contendrá los scripts que el curso ejecutará en clase.  
 - **python/**: alternativas y utilidades en Python para quien prefiera ese entorno.  
