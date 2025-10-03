@@ -31,3 +31,17 @@ source("R/analisis_impacto.R", echo = TRUE)
   read.csv("data/impact_dataset.csv", nrows = 3)
 
 [![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/orinconl/economia-compitacional/HEAD?urlpath=lab)
+## Ejecutar en la nube (Binder: JupyterLab con Python y R)
+
+[![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/orinconl/economia-compitacional/HEAD?urlpath=lab)
+
+> Abre JupyterLab en tu navegador con entornos de **Python 3** y **R** (gracias a `r-irkernel`).
+
+### Paso a paso (R)
+1. Haz clic en el botón **Launch Binder**.
+2. En el **Launcher** de JupyterLab elige **R** (R kernel) → *Notebook*.
+3. En la primera celda, verifica y carga los datos:
+   ```r
+   stopifnot(file.exists("data/impact_dataset.csv"))
+   panel <- read.csv("data/impact_dataset.csv")
+   head(panel)
