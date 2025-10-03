@@ -1,47 +1,23 @@
 # economia-compitacional
-Material de Economía Computacional (Especialización en Econometría). Scripts en R, Python y otros; prácticas reproducibles.
 
-## Cómo ejecutar
+Repositorio de la asignatura **Economía Computacional** (Especialización en Econometría).
+Incluye materiales en **R** y **Python**, datos de práctica y guías para ejecutar el contenido
+tanto **localmente** como **en la nube** (Binder/JupyterLab).
+## Estructura del repositorio
 
-En R o RStudio, ubicándote en la **raíz** del repositorio, corre:
+.
+├─ R/                 # Scripts en R para el análisis principal
+├─ python/            # Notebooks y scripts en Python (analítica y soporte)
+├─ data/              # Archivos de datos que usarán los estudiantes (sin subir sensibles)
+├─ docs/              # Material de apoyo (apuntes, PDFs, diapositivas)
+├─ .binder/           # Configuración para ejecutar en la nube (Binder/JupyterLab)
+├─ README.md          # Esta guía de uso
+└─ LICENSE            # Licencia del repositorio
 
-```r
-source("R/analisis_impacto.R", echo = TRUE)
+- **R/**: contendrá los scripts que el curso ejecutará en clase.  
+- **python/**: alternativas y utilidades en Python para quien prefiera ese entorno.  
+- **data/**: aquí van los archivos .csv y otros insumos que se cargarán desde los scripts.  
+- **.binder/**: permite abrir el repo en la nube con R y Python, sin instalar nada.  
+- **docs/**: material complementario para consulta.
 
-## Requisitos
-
-- **R ≥ 4.2**  
-- *(Opcional)* **RStudio**  
-- **Paquetes usados**: dplyr, tidyr, ggplot2, knitr, broom, AER, lmtest, sandwich, MatchIt, rdrobust, rddensity.  
-  > Los scripts intentan **instalar automáticamente** cualquier paquete faltante desde CRAN.
-
-## Datos
-
-- Carpeta esperada: `data/`
-- Archivos necesarios:
-  - `impact_dataset.csv` — base principal.
-  - `impact_dataset_dictionary.csv` — diccionario de variables.
-- Cómo obtenerlos:
-  - Descarga los archivos desde el enlace que comparta el docente y colócalos en `data/` **sin cambiar los nombres**.
-- Buenas prácticas:
-  - No subir datos sensibles ni archivos > 50 MB al repositorio.
-- Comprobación rápida en R:
-  ```r
-  stopifnot(file.exists("data/impact_dataset.csv"))
-  read.csv("data/impact_dataset.csv", nrows = 3)
-
-[![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/orinconl/economia-compitacional/HEAD?urlpath=lab)
-## Ejecutar en la nube (Binder: JupyterLab con Python y R)
-
-[![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/orinconl/economia-compitacional/HEAD?urlpath=lab)
-
-> Abre JupyterLab en tu navegador con entornos de **Python 3** y **R** (gracias a `r-irkernel`).
-
-### Paso a paso (R)
-1. Haz clic en el botón **Launch Binder**.
-2. En el **Launcher** de JupyterLab elige **R** (R kernel) → *Notebook*.
-3. En la primera celda, verifica y carga los datos:
-   ```r
-   stopifnot(file.exists("data/impact_dataset.csv"))
-   panel <- read.csv("data/impact_dataset.csv")
-   head(panel)
+> Nota: evita subir datos personales o archivos mayores a ~50 MB.
