@@ -1,0 +1,27 @@
+name: econ-comp
+channels:
+  - conda-forge
+dependencies:
+  # Jupyter
+  - python=3.11
+  - jupyterlab
+  - r-irkernel
+
+  # R base
+  - r-base=4.3.*
+
+  # Paquetes R usados en el curso/código
+  - r-dplyr
+  - r-tidyr
+  - r-ggplot2
+  - r-knitr
+  - r-broom
+  - r-aer
+  - r-lmtest
+  - r-sandwich
+  - r-matchit
+  - r-rdrobust
+  - r-rddensity
+  - r-cobalt
+  - r-tibble
+  - r-readr
