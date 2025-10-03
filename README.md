@@ -29,3 +29,5 @@ source("R/analisis_impacto.R", echo = TRUE)
   ```r
   stopifnot(file.exists("data/impact_dataset.csv"))
   read.csv("data/impact_dataset.csv", nrows = 3)
+
+[![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/orinconl/economia-compitacional/HEAD?urlpath=lab)
