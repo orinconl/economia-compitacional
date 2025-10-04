@@ -24,7 +24,8 @@ tanto **localmente** como **en la nube** (Binder/JupyterLab).
 
 > Nota: evita subir datos personales o archivos mayores a ~50 MB.
 
-## Paso 3 — Ejecutar en la nube (Binder)
+```
+
 
 [![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/orinconl/economia-compitacional/HEAD?urlpath=lab)
 
