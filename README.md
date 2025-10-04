@@ -23,3 +23,17 @@ tanto **localmente** como **en la nube** (Binder/JupyterLab).
 - **docs/**: material complementario para consulta.
 
 > Nota: evita subir datos personales o archivos mayores a ~50 MB.
+
+## Paso 3 — Ejecutar en la nube (Binder)
+
+[![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/orinconl/economia-compitacional/HEAD?urlpath=lab)
+
+1) Haz clic en **Launch Binder** para abrir **JupyterLab** en el navegador.  
+2) En el **Launcher** elige **R → Notebook** o **Python 3 → Notebook**.  
+3) En la primera celda, verifica y carga la data:
+
+**R**
+```r
+stopifnot(file.exists("data/impact_dataset.csv"))
+panel <- read.csv("data/impact_dataset.csv")
+head(panel)
