@@ -1,32 +1,10 @@
-name: econ-class
+name: econ-env
 channels:
   - conda-forge
 dependencies:
-  # --- Python ---
   - python=3.11
-  - jupyterlab
-  - ipykernel
-  - numpy
-  - pandas
-  - matplotlib
-  - seaborn
-  - statsmodels
   - pip
-
-  # --- R (Jupyter kernel de R) ---
   - r-base=4.3
   - r-irkernel
-
-  # --- Paquetes R que usas en tu código ---
-  - r-tidyverse
-  - r-knitr
-  - r-broom
-  - r-aer
-  - r-lmtest
-  - r-sandwich
-  - r-matchit
-  - r-rdrobust
-  - r-rddensity
-  - r-cobalt
-  - r-tibble
-  - r-readr
+  - pip:
+      - pandas
