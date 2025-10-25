@@ -41,3 +41,9 @@ head(panel)
 
 [Haz clic aquí para abrir el ejercicio en Binder](https://mybinder.org/v2/gh/orinconl/economia-compitacional/main?labpath=notebooks%2Fejercicio_finanzas.ipynb)
 
+stopifnot(file.exists("data/impact_dataset.csv"))
+panel <- read.csv("data/impact_dataset.csv")
+head(panel)
+
+[Haz clic aquí para abrir el ejercicio en Binder](https://mybinder.org/v2/gh/orinconl/economia-compitacional/HEAD?labpath=notebooks%2Fejercicio_finanzas.ipynb)
+
